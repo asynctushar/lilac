@@ -4,7 +4,7 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section className='px-8 sm:px-12 md:px-8 lg:px-24 xl:px-20 md:h-[calc(100vh-80px)] lg:h-auto flex flex-col md:flex-row gap-8 md:gap-4 lg:gap-0 items-center pt-8 lg:pt-12'>
+        <section className='px-8 sm:px-12 md:px-8 lg:px-24 xl:px-20 md:h-[calc(100vh-80px)] lg:h-auto flex flex-col md:flex-row gap-8 md:gap-4 lg:gap-0 items-center pt-8 lg:pt-12 pb-24 md:pb-0'>
             <div className='w-7/12 sm:w-5/12 md:w-1/2 overflow-hidden'>
                 <Image src="/images/hero.webp" width={600} height={600} className='rounded-t-full md:w-10/12 xl:w-auto' />
             </div>

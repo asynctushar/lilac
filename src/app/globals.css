@@ -23,6 +23,7 @@
   /* Colors */
   --color-background: var(--white-hsl);
   --color-foreground: var(--black-hsl);
+  --color-primary: var(--lightAccent-hsl);
 
   /* Fonts */
   --font-sans: var(--font-sans);
