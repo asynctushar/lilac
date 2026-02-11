@@ -25,7 +25,7 @@ const Header = () => {
                 ref={headerRef}
                 className="sticky top-0 z-50 bg-background"
             >
-                <div className="px-8 sm:px-12 md:px-20 h-20 sm:h-28 md:h-20 flex items-center justify-between">
+                <div className="px-8 sm:px-12 md:px-8 lg:px-24 h-20 sm:h-28 md:h-20 flex items-center justify-between">
                     {/* Hamburger */}
                     <button
                         onClick={() => setOpen(!open)}
