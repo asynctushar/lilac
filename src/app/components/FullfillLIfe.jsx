@@ -13,8 +13,8 @@ const FullfillLIfe = () => {
                     </h2>
                     <p className='text-base sm:text-lg md:text-base lg:text-xl xl:text-2xl leading-relaxed'>
                         Life can be challenging—especially when you're trying to balance your personal and professional life.
-                        <br className='hidden lg:block' />
-                        <br className='hidden lg:block' />
+                        <br />
+                        <br  />
                         It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.
                     </p>
                 </article>
