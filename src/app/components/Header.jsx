@@ -7,6 +7,8 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     const headerRef = useRef(null);
     const [headerHeight, setHeaderHeight] = useState(0);
+    const [hidden, setHidden] = useState(false);
+    const lastScrollY = useRef(0);
 
     useEffect(() => {
         document.body.style.overflow = open ? "hidden" : "";
@@ -19,12 +21,40 @@ const Header = () => {
         }
     }, []);
 
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            // Ignore very small scrolls
+            if (Math.abs(currentScrollY - lastScrollY.current) < 5) return;
+
+            if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
+                // scrolling down
+                setHidden(true);
+            } else {
+                // scrolling up
+                setHidden(false);
+            }
+
+            lastScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+
     return (
         <>
             <header
                 ref={headerRef}
-                className="sticky top-0 z-50 bg-background"
+                className={`fixed top-0 left-0 right-0 z-50 bg-background
+  transition-transform duration-300 ease-in-out
+  ${hidden ? "-translate-y-full" : "translate-y-0"}`}
             >
+
                 <div className="px-8 sm:px-12 md:px-8 lg:px-24 h-20 sm:h-28 md:h-20 flex items-center justify-between">
                     {/* Hamburger */}
                     <button
@@ -55,7 +85,7 @@ const Header = () => {
                     </Link>
 
                     {/* Desktop nav */}
-                    <nav className="hidden md:flex gap-14 text-2xl">
+                    <nav className="hidden md:flex gap-14 text-xl">
                         <Link href="/#blogs">Blog</Link>
                         <Link href="/#contact">Contact</Link>
                     </nav>
