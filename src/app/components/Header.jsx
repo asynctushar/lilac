@@ -59,7 +59,7 @@ const Header = () => {
                     {/* Hamburger */}
                     <button
                         onClick={() => setOpen(!open)}
-                        className="md:hidden relative w-8 h-8"
+                        className="md:hidden relative w-8 h-8 cursor-pointer"
                         aria-label="Toggle menu"
                     >
                         {/* Top line */}

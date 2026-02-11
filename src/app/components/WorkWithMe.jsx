@@ -5,7 +5,7 @@ import React from 'react';
 
 const WorkWithMe = () => {
     return (
-        <section className='lg:h-[80vh] md:h-[40vh] flex flex-col md:flex-row overflow-hidden bg-accent'>
+        <section className='lg:min-h-[80vh] md:min-h-[40vh] flex flex-col md:flex-row overflow-hidden bg-accent'>
 
             <div className='w-full md:w-1/2 relative h-64 sm:h-80 md:h-auto'>
                 <Image
@@ -23,7 +23,7 @@ const WorkWithMe = () => {
                     <h2 className='font-semibold text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight'>
                         You don't have to do this all alone.
                     </h2>
-                    <p className='text-base sm:text-lg md:text-base lg:text-xl xl:text-2xl leading-relaxed'>
+                    <div className='text-base sm:text-lg md:text-base lg:text-xl xl:text-2xl leading-relaxed'>
                         If you are facing any of these, there's hope:
                         <br />
                         <br />
@@ -47,10 +47,10 @@ const WorkWithMe = () => {
                         <br />
                         With empathy and guidance, we'll work together to navigate the challenges life throws your way.
 
-                    </p>
+                    </div>
                 </article>
                 <Link
-                    href="/#cta"
+                    href="/#contact"
                     className='uppercase border-t border-foreground px-6 py-4 md:py-3 lg:py-8 font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:bg-foreground hover:text-background duration-700 transition-colors'
                 >
                     Work With Me <span className='-translate-y-0.5'>&#8594;</span>

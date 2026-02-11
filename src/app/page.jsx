@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import FullfillLIfe from './components/FullfillLIfe';
 import Specialities from './components/Specialities';
 import WorkWithMe from './components/WorkWithMe';
+import About from './components/About';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                 <FullfillLIfe />
                 <Specialities />
                 <WorkWithMe />
+                <About />
             </main>
             <Footer />
         </>

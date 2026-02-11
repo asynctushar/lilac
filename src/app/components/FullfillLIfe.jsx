@@ -4,7 +4,7 @@ import React from 'react';
 
 const FullfillLIfe = () => {
     return (
-        <section className='lg:h-[80vh] md:h-[40vh]  flex flex-col-reverse md:flex-row overflow-hidden bg-primary'>
+        <section className='lg:min-h-[80vh] md:min-h-[40vh]  flex flex-col-reverse md:flex-row overflow-hidden bg-primary'>
             {/* Content Section */}
             <div className='flex flex-col w-full md:w-1/2'>
                 <article className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 py-8 sm:py-10 md:py-12 lg:py-16 flex flex-col justify-center gap-4 sm:gap-6 md:gap-6 lg:gap-8 flex-1'>
