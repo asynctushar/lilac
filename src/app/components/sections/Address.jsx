@@ -7,7 +7,7 @@ import { motion, } from 'motion/react';
 
 const Address = () => {
     return (
-        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-12 sm:gap-24 py-16 sm:py-16 md:py-20 lg:py-24 items-center md:flex-row md:items-start font-medium text-xl'>
+        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-12 sm:gap-24 py-16 sm:py-16 md:py-20 lg:py-24 items-center md:flex-row md:items-start font-medium text-base sm:text-lg xl:text-xl leading-relaxed'>
             {/* Contact Information */}
             <motion.div
                 initial={{ y: 30, opacity: 0 }}
@@ -18,27 +18,27 @@ const Address = () => {
                     ease: [0.1, 0.2, 0.4, 1],
                 }}
                 className='w-full md:w-1/2 flex flex-col gap-8 items-center text-center md:items-start md:text-left'>
-                <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold'>
-                    Lilac Template
+                <h2 className='text-2xl md:text-3xl font-semibold'>
+                    Dr. Maya Reynolds, PsyD
                 </h2>
                 <address className='not-italic flex flex-col gap-1'>
-                    <span>123 Example Road</span>
-                    <span>Minneapolis, MN</span>
+                    <span>123th Street 45 W</span>
+                    <span>Santa Monica, CA 90401</span>
                 </address>
                 <ul className='flex flex-col gap-2 list-none'>
                     <li>
                         <a
-                            href="mailto:email@example.com"
-                            className='border-b inline-block pb-0.5'
+                            href="mailto:maya.reynolds@example.com"
+                            className='border-b inline-block'
                         >
-                            email@example.com
+                            maya.reynolds@example.com
                         </a>
                     </li>
                     <li>
 
                         <a
                             href="tel:+15555555555"
-                            className='border-b inline-block pb-0.5'
+                            className='border-b inline-block'
                         >
                             (555) 555-5555
                         </a>
@@ -57,7 +57,7 @@ const Address = () => {
                         duration: 0.5,
                         ease: [0.1, 0.2, 0.4, 1],
                     }} className='flex flex-col gap-8 text-center md:text-left'>
-                    <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-medium'>
+                    <h2 className='text-2xl md:text-3xl font-medium'>
                         Hours
                     </h2>
                     <div className='flex flex-col gap-1'>
@@ -76,7 +76,7 @@ const Address = () => {
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     className='flex flex-col gap-8 text-center md:text-right' aria-label="Footer navigation">
-                    <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-medium'>
+                    <h2 className='text-2xl md:text-3xl font-medium'>
                         Find
                     </h2>
                     <ul className='flex flex-col gap-2 list-none'>

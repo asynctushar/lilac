@@ -17,14 +17,13 @@ const Footer = () => {
                 }}
                 className='space-y-6 py-12'>
                 <div className='flex flex-wrap gap-4 justify-center'>
-                    <Link href="/#policy" className='border-b leading-tight'>Privacy & Cookies Policy </Link>
+                    <Link href="/#policy" className='border-b leading-tight'>Privacy & Cookies Policy</Link>
                     <Link href="/#estimate" className='border-b leading-tight'>Good Faith Estimate</Link>
-                    <Link href="/#terms " className='border-b leading-tight'>Website Terms & Conditions</Link>
+                    <Link href="/#terms" className='border-b leading-tight'>Website Terms & Conditions</Link>
                     <Link href="/#disclaimer" className='border-b leading-tight'>Disclaimer</Link>
-
                 </div>
                 <p>
-                    Website Template Credits: <Link href="/#bloom" className='border-b leading-tight' >Go Bloom Creative</Link>
+                    Website Template Credits: <Link href="/#bloom" className='border-b leading-tight'>Go Bloom Creative</Link>
                 </p>
             </motion.div>
             <motion.p
@@ -35,7 +34,7 @@ const Footer = () => {
                     duration: 0.5,
                     ease: [0.1, 0.2, 0.4, 1],
                 }}
-            >All Rights Reserved © 2024 Your Business Name Here, LLC.
+            > All Rights Reserved © 2026 Dr. Maya Reynolds, PsyD.
             </motion.p>
         </footer>
     );

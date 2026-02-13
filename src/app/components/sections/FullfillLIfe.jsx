@@ -21,11 +21,11 @@ const FullfillLIfe = () => {
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 py-8 sm:py-10 md:py-12 lg:py-16 flex flex-col justify-center gap-4 sm:gap-6 md:gap-6 lg:gap-8 flex-1'>
-                    <h2 className='font-semibold text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight'>
+                    <h2 className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight'>
                         Live with
                         more ease
                     </h2>
-                    <p className='text-base sm:text-lg xl:text-xlleading-relaxed'>
+                    <p className='text-base sm:text-lg xl:text-xl leading-relaxed'>
                         Anxiety, burnout, or past experiences can make daily life feel heavier than it needs to.
                         <br />
                         <br />

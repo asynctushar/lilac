@@ -9,19 +9,20 @@ const faqs = [
     {
         id: 1,
         question: "Do you take insurance?",
-        answer: "Answer goes here."
+        answer: "I am an out-of-network provider. I can provide a superbill for possible reimbursement through your insurance plan."
     },
     {
         id: 2,
         question: "What are your rates?",
-        answer: "Answer goes here."
+        answer: "My standard fee is $175 per 50-minute session. We can discuss payment options during your consultation."
     },
     {
         id: 3,
         question: "Do you have any openings?",
-        answer: "Answer goes here."
+        answer: "Availability changes throughout the year. Please reach out to inquire about current openings and scheduling."
     },
 ];
+
 
 const FAQ = () => {
     return (
@@ -38,7 +39,7 @@ const FAQ = () => {
                     }}
                     className='w-1/2 md:w-10/12 xl:w-8/12 2xl:w-7/12 mx-auto'>
                     <Image
-                        src="/images/faq.webp"
+                        src="/images/faq.jpg"
                         alt="Lilac - Therapist"
                         width={600}
                         height={600}
@@ -58,7 +59,7 @@ const FAQ = () => {
                         duration: 0.5,
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
-                    className='font-semibold text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight'>
+                    className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight'>
                     FAQs
                 </motion.h2>
                 <FaqAccordion faqs={faqs} />

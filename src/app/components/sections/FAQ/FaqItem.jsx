@@ -19,7 +19,7 @@ const FaqItem = ({ faq, isOpen, onToggle }) => {
                     />
                 </div>
 
-                <p className={`text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight flex-1 pr-2`}>
+                <p className={`text-xl md:text-2xl font-semibold leading-tight flex-1 pr-2`}>
                     {faq.question}
                 </p>
             </button>
@@ -30,7 +30,7 @@ const FaqItem = ({ faq, isOpen, onToggle }) => {
             >
                 <div className="overflow-hidden">
                     <div className={`pt-2 pb-4 sm:pb-5 md:pb-6 pl-0 gap-4 sm:gap-6 md:gap-8`}>
-                        <p className={`text-sm sm:text-base md:text-lg leading-relaxed pr-2`}>
+                        <p className={`text-base sm:text-lg xl:text-xl leading-relaxed pr-2`}>
                             {faq.answer}
                         </p>
                     </div>

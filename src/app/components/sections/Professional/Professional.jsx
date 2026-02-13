@@ -9,19 +9,20 @@ const professions = [
     {
         id: 1,
         title: "Education",
-        description: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea."
+        description: "Doctorate in Clinical Psychology (PsyD) with specialized training in trauma, anxiety, and burnout therapy."
     },
     {
         id: 2,
         title: "Licensure",
-        description: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea."
+        description: "Licensed Clinical Psychologist (PsyD) practicing in California, specializing in adult mental health."
     },
     {
         id: 3,
         title: "Certifications",
-        description: "Euphorbia dianthus alchemilla muscari lavandula anthurium artemesia false artemesia moluccella gladiolus cirsium trollius anthurium prunus delphinium achillea."
+        description: "Trained in CBT, EMDR, mindfulness-based practices, and body-oriented techniques for holistic therapy."
     },
 ];
+
 
 const Professional = () => {
     return (
@@ -35,7 +36,7 @@ const Professional = () => {
                     duration: 0.5,
                     ease: [0.1, 0.2, 0.4, 1],
                 }}
-                className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-center'>
+                className='text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center'>
                 My Professional Background
             </motion.h2>
             <motion.div

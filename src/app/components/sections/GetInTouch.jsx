@@ -9,7 +9,7 @@ const MotionLink = motion(Link);
 const GetInTouch = () => {
     return (
         <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-12 sm:gap-24 py-16 sm:py-16 md:py-20 lg:py-24 items-center text-background bg-dark-accent'>
-            <div className='space-y-8 md:space-y-12 w-full md:w-2/3 2xl:w-1/3'>
+            <div className='space-y-8 md:space-y-12 w-full md:w-2/3 2xl:w-2/3'>
                 <motion.h2
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ const GetInTouch = () => {
                     transition={{
                         duration: 0.5,
                         ease: [0.1, 0.2, 0.4, 1],
-                    }} 
+                    }}
                     className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-center'>
                     Get started today.
                 </motion.h2>
@@ -28,9 +28,9 @@ const GetInTouch = () => {
                     transition={{
                         duration: 0.5,
                         ease: [0.1, 0.2, 0.4, 1],
-                    }} className="text-xl font-medium text-center">
-                    Ready to take the first step towards a happier, healthier you?<br />
-                    Contact me to book your first session. I look forward to starting this therapeutic journey with you.
+                    }} className="text-base sm:text-lg xl:text-xl font-medium text-center">
+                    Ready to take the first step toward a calmer, more balanced life? <br />
+                    Reach out to schedule your first session and begin your therapeutic journey in Santa Monica, CA.
                 </motion.p>
             </div>
             <MotionLink

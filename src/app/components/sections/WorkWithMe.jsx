@@ -21,7 +21,7 @@ const WorkWithMe = () => {
                 }}
                 className='w-full md:w-1/2 relative h-64 sm:h-80 md:h-auto'>
                 <Image
-                    src="/images/work-with-me.webp"
+                    src="/images/therapy.jpg"
                     alt="work with me"
                     fill
                     className='object-cover object-center md:object-[center_20%] lg:object-[center_30%]'
@@ -40,8 +40,8 @@ const WorkWithMe = () => {
                             duration: 0.5,
                             ease: [0.1, 0.2, 0.4, 1],
                         }}
-                        className='font-semibold text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight' >
-                        You don't have to do this all alone.
+                        className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight' >
+                        You are not alone
                     </motion.h2>
 
                     <motion.div
@@ -52,29 +52,29 @@ const WorkWithMe = () => {
                             duration: 0.5,
                             ease: [0.1, 0.2, 0.4, 1],
                         }}
-                        className='text-base sm:text-lg md:text-base lg:text-xl xl:text-2xl leading-relaxed'>
-                        If you are facing any of these, there's hope:
+                        className='text-base sm:text-lg xl:text-xl leading-relaxed'>
+                        If any of this feels familiar, support is available:
                         <br />
                         <br />
                         <ul className='list-disc ps-12'>
                             <li>
-                                Persistent feelings of sadness or hopelessness
+                                Constant worry or racing thoughts
                             </li>
                             <li>
-                                Trouble focusing or making decisions
+                                Feeling on edge or easily overwhelmed
                             </li>
                             <li>
-                                Difficulty maintaining relationships
+                                Difficulty sleeping or fully relaxing
                             </li>
                             <li>
-                                Feeling constantly exhausted or unmotivated
+                                Tension in your body
                             </li>
                             <li>
-                                A pervasive sense of being overwhelmed
+                                Appearing “fine” while struggling inside
                             </li>
                         </ul>
                         <br />
-                        With empathy and guidance, we'll work together to navigate the challenges life throws your way.
+                        With care and collaboration, we'll explore what's keeping you stuck and help you move forward with greater clarity and ease.
 
                     </motion.div>
                 </article>
@@ -89,7 +89,8 @@ const WorkWithMe = () => {
                     href="/#contact"
                     className='uppercase border-t border-foreground px-6 py-4 md:py-3 lg:py-8 font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:bg-foreground hover:text-background duration-700 transition-colors'
                 >
-                    Work With Me <span className='-translate-y-0.5'>&#8594;</span>
+                    Schedule a Consultation
+                    <span className='-translate-y-0.5'>&#8594;</span>
                 </MotionLink>
             </div>
         </section >
