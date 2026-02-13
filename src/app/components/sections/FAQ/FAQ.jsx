@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import FaqItem from './ui/FaqItem';
+import FaqAccordion from './FaqAccordion';
 
 const faqs = [
     {
@@ -35,16 +35,12 @@ const FAQ = () => {
                 </div>
             </div>
 
-            {/* FAQ Section - Fixed responsive layout */}
+            {/* FAQ Section */}
             <div className='w-full md:w-1/2 flex flex-col self-start md:mt-12 lg:mt-24 xl:mt-12 2xl:mt-24 gap-8 sm:gap-10 md:gap-12'>
                 <h2 className='font-semibold text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight'>
                     FAQs
                 </h2>
-                <div className='flex flex-col w-full'>
-                    {faqs.map((faq) => (
-                        <FaqItem key={faq.id} faq={faq} />
-                    ))}
-                </div>
+                <FaqAccordion faqs={faqs} />
             </div>
         </section>
     );

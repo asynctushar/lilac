@@ -1,0 +1,45 @@
+'use client';
+
+import React from 'react';
+
+const ProfessionalItem = ({ profession, isOpen, onToggle }) => {
+    return (
+        <div className='border-t border-foreground last:border-b'>
+            <button
+                className={`w-full flex items-center justify-between gap-4 py-3 md:py-4 text-left group transition-opacity duration-200 cursor-pointer`}
+                onClick={onToggle}
+                aria-expanded={isOpen}
+            >
+                <p className={`text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-2xl font-medium leading-tight flex-1 pr-2`}>
+                    {profession.title}
+                </p>
+
+                {/* Plus/Minus Icon */}
+                <div className={`relative shrink-0 w-4 h-4 mt-1`}>
+                    <span
+                        className={`absolute left-0 top-1/2 -translate-y-1/2 h-0.5 w-full bg-foreground/60 transition-all duration-200 ease-in-out`}
+                    />
+                    <span
+                        className={`absolute left-1/2 top-0 -translate-x-1/2 w-0.5 h-full bg-foreground/60 transition-all duration-200 ease-in-out
+                            ${isOpen ? "rotate-90" : "rotate-180"}`}
+                    />
+                </div>
+            </button>
+
+            <div
+                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    }`}
+            >
+                <div className="overflow-hidden w-full sm:w-5/6 md:w-2/3 mx-auto">
+                    <div className={`pt-2 pb-4 sm:pb-5 md:pb-6 pl-0 gap-4 sm:gap-6 md:gap-8`}>
+                        <p className={`text-sm sm:text-base md:text-lg leading-relaxed pr-2`}>
+                            {profession.description}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default ProfessionalItem;

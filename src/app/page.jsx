@@ -1,12 +1,13 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import FullfillLIfe from './components/FullfillLIfe';
-import Specialities from './components/Specialities';
-import WorkWithMe from './components/WorkWithMe';
-import About from './components/About';
-import FAQ from './components/FAQ';
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import Hero from './components/sections/Hero';
+import FullfillLIfe from './components/sections/FullfillLIfe';
+import Specialities from './components/sections/Specialities';
+import WorkWithMe from './components/sections/WorkWithMe';
+import About from './components/sections/About';
+import FAQ from './components/sections/FAQ/FAQ';
+import Professional from './components/sections/Professional/Professional';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
                 <WorkWithMe />
                 <About />
                 <FAQ />
+                <Professional />
             </main>
             <Footer />
         </>
