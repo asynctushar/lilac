@@ -1,10 +1,21 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
+import { motion, } from 'motion/react';
 
 const Footer = () => {
     return (
         <footer className='bg-primary text-center py-8 px-4'>
-            <div className='space-y-6 py-12'>
+            <motion.div
+                initial={{ y: 10, opacity: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 0.5,
+                    ease: [0.4, 0, 0.2, 1],
+                }}
+                className='space-y-6 py-12'>
                 <div className='flex flex-wrap gap-4 justify-center'>
                     <Link href="/#policy" className='border-b leading-tight'>Privacy & Cookies Policy </Link>
                     <Link href="/#estimate" className='border-b leading-tight'>Good Faith Estimate</Link>
@@ -15,8 +26,17 @@ const Footer = () => {
                 <p>
                     Website Template Credits: <Link href="/#bloom" className='border-b leading-tight' >Go Bloom Creative</Link>
                 </p>
-            </div>
-            <p>All Rights Reserved © 2024 Your Business Name Here, LLC.</p>
+            </motion.div>
+            <motion.p
+                initial={{ y: 10, opacity: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 0.5,
+                    ease: [0.4, 0, 0.2, 1],
+                }}
+            >All Rights Reserved © 2024 Your Business Name Here, LLC.
+            </motion.p>
         </footer>
     );
 };

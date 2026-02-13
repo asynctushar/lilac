@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, } from 'motion/react';
+
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -48,13 +50,19 @@ const Header = () => {
 
     return (
         <>
-            <header
+            <motion.header
                 ref={headerRef}
-                className={`fixed top-0 left-0 right-0 z-50 bg-background
-  transition-transform duration-300 ease-in-out
-  ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+                initial={{ y: 5, opacity: 0 }}
+                animate={{
+                    y: hidden ? "-100%" : 0,
+                    opacity: 1,
+                }}
+                transition={{
+                    duration: 0.4,
+                    ease: [0.4, 0, 0.2, 1],
+                }}
+                className="fixed top-0 left-0 right-0 z-50 bg-background"
             >
-
                 <div className="px-8 sm:px-12 md:px-8 lg:px-24 h-20 sm:h-28 md:h-20 flex items-center justify-between">
                     {/* Hamburger */}
                     <button
@@ -90,22 +98,35 @@ const Header = () => {
                         <Link href="/#contact">Contact</Link>
                     </nav>
                 </div>
-            </header>
+            </motion.header>
 
             {/* Mobile Menu Overlay */}
-            <div
-                style={{ top: headerHeight, height: `calc(100vh - ${headerHeight}px)` }}
-                className={`fixed left-0 right-0 z-40 bg-background flex flex-col items-center justify-center gap-6 text-4xl font-medium
-        transition-opacity duration-300 ease-out
-        ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+            <motion.div
+                initial={false}
+                animate={{
+                    opacity: open ? 1 : 0,
+                    y: open ? 0 : 20,
+                }}
+                transition={{
+                    duration: 0.4,
+                    ease: [0.4, 0, 0.2, 1],
+                }}
+                style={{
+                    top: headerHeight,
+                    height: `calc(100vh - ${headerHeight}px)`,
+                    pointerEvents: open ? "auto" : "none",
+                }}
+                className="fixed left-0 right-0 z-40 bg-background flex flex-col items-center justify-center gap-6 text-4xl font-medium"
             >
+
+
                 <Link href="/blogs" onClick={() => setOpen(false)}>
                     Blog
                 </Link>
                 <Link href="/contact" onClick={() => setOpen(false)}>
                     Contact
                 </Link>
-            </div>
+            </motion.div>
         </>
     );
 };
