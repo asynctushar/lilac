@@ -13,7 +13,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 transition={{
                     duration: 0.5,
-                    ease: [0.4, 0, 0.2, 1],
+                    ease: [0.1, 0.2, 0.4, 1],
                 }}
                 className='space-y-6 py-12'>
                 <div className='flex flex-wrap gap-4 justify-center'>
@@ -33,7 +33,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 transition={{
                     duration: 0.5,
-                    ease: [0.4, 0, 0.2, 1],
+                    ease: [0.1, 0.2, 0.4, 1],
                 }}
             >All Rights Reserved © 2024 Your Business Name Here, LLC.
             </motion.p>

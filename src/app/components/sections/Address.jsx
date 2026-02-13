@@ -1,11 +1,23 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
+import { motion, } from 'motion/react';
+
 
 const Address = () => {
     return (
         <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-12 sm:gap-24 py-16 sm:py-16 md:py-20 lg:py-24 items-center md:flex-row md:items-start font-medium text-xl'>
             {/* Contact Information */}
-            <div className='w-full md:w-1/2 flex flex-col gap-8 items-center text-center md:items-start md:text-left'>
+            <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 0.5,
+                    ease: [0.1, 0.2, 0.4, 1],
+                }}
+                className='w-full md:w-1/2 flex flex-col gap-8 items-center text-center md:items-start md:text-left'>
                 <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold'>
                     Lilac Template
                 </h2>
@@ -32,12 +44,19 @@ const Address = () => {
                         </a>
                     </li>
                 </ul>
-            </div>
+            </motion.div>
 
             {/* Hours and Navigation */}
             <div className='flex flex-col md:flex-row w-full md:w-1/2 gap-12 md:justify-between'>
                 {/* Hours */}
-                <div className='flex flex-col gap-8 text-center md:text-left'>
+                <motion.div
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.5,
+                        ease: [0.1, 0.2, 0.4, 1],
+                    }} className='flex flex-col gap-8 text-center md:text-left'>
                     <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-medium'>
                         Hours
                     </h2>
@@ -45,10 +64,18 @@ const Address = () => {
                         <p>Monday - Friday</p>
                         <p>10am - 6pm</p>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Navigation */}
-                <nav className='flex flex-col gap-8 text-center md:text-right' aria-label="Footer navigation">
+                <motion.nav
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.5,
+                        ease: [0.1, 0.2, 0.4, 1],
+                    }}
+                    className='flex flex-col gap-8 text-center md:text-right' aria-label="Footer navigation">
                     <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-medium'>
                         Find
                     </h2>
@@ -69,7 +96,7 @@ const Address = () => {
                             </Link>
                         </li>
                     </ul>
-                </nav>
+                </motion.nav>
             </div>
         </section >
     );

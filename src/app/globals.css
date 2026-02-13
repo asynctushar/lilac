@@ -13,7 +13,6 @@
   --darkAccent-hsl: hsl(56.79, 28.57%, 38.43%);
 
   /* Fonts */
-  --font-sans: "Gopher", ui-serif, Georgia, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -37,7 +36,7 @@
   body {
     background-color: var(--white-hsl);
     color: var(--black-hsl);
-    font-family: var(--font-sans);
+    font-family: var(--font-mont-serret);
     font-weight: var(--fw-regular);
     line-height: 1.6;
   }
