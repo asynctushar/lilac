@@ -25,6 +25,7 @@
   --color-foreground: var(--black-hsl);
   --color-primary: var(--lightAccent-hsl);
   --color-accent: var(--accent-hsl);
+  --color-dark-accent: var(--darkAccent-hsl);
 
   /* Fonts */
   --font-sans: var(--font-sans);

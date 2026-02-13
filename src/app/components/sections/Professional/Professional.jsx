@@ -21,8 +21,8 @@ const professions = [
 
 const Professional = () => {
     return (
-        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-8 sm:gap-12 py-12 sm:py-16 md:py-20 lg:py-24 items-center'>
-            <h2 className='text-2xl xl:text-4xl 2xl:text-5xl font-semibold text-center'>
+        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-8 sm:gap-12 py-12 sm:py-16 md:py-20 lg:py-24 items-center bg-primary'>
+            <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-center'>
                 My Professional Background
             </h2>
             <div className='w-full md:w-1/2 mx-auto'>
