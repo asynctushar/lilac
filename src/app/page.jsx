@@ -6,6 +6,7 @@ import FullfillLIfe from './components/FullfillLIfe';
 import Specialities from './components/Specialities';
 import WorkWithMe from './components/WorkWithMe';
 import About from './components/About';
+import FAQ from './components/FAQ';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
                 <Specialities />
                 <WorkWithMe />
                 <About />
+                <FAQ />
             </main>
             <Footer />
         </>
