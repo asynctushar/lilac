@@ -9,6 +9,7 @@ import About from './components/sections/About';
 import FAQ from './components/sections/FAQ/FAQ';
 import Professional from './components/sections/Professional/Professional';
 import GetInTouch from './components/sections/GetInTouch';
+import Address from './components/sections/Address';
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
                 <FAQ />
                 <Professional />
                 <GetInTouch />
+                <Address />
             </main>
             <Footer />
         </>

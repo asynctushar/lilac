@@ -8,7 +8,7 @@ const GetInTouch = () => {
                 <h2 className='text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-center'>
                     Get started today.
                 </h2>
-                <p className="text-xl  font-medium text-center ">
+                <p className="text-xl font-medium text-center">
                     Ready to take the first step towards a happier, healthier you?<br />
                     Contact me to book your first session. I look forward to starting this therapeutic journey with you.
                 </p>
