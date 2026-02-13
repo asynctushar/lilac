@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React from 'react';
 import { motion, } from 'motion/react';
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 const FullfillLIfe = () => {
     return (
@@ -21,14 +21,15 @@ const FullfillLIfe = () => {
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 py-8 sm:py-10 md:py-12 lg:py-16 flex flex-col justify-center gap-4 sm:gap-6 md:gap-6 lg:gap-8 flex-1'>
-                    <h2 className='font-semibold text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight'>
-                        Live a fulfilling life.
+                    <h2 className='font-semibold text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight'>
+                        Live with
+                        more ease
                     </h2>
-                    <p className='text-base sm:text-lg md:text-base lg:text-xl xl:text-2xl leading-relaxed'>
-                        Life can be challenging—especially when you're trying to balance your personal and professional life.
+                    <p className='text-base sm:text-lg xl:text-xlleading-relaxed'>
+                        Anxiety, burnout, or past experiences can make daily life feel heavier than it needs to.
                         <br />
                         <br />
-                        It's easy to feel like you're alone in facing these challenges, but I want you to know that I'm here to help.
+                        Even when you seem functional on the outside, you may be carrying constant tension or worry. Therapy helps you respond differently.
                     </p>
                 </motion.article>
                 <MotionLink
@@ -55,12 +56,12 @@ const FullfillLIfe = () => {
                 }}
                 className='w-full md:w-1/2 relative h-64 sm:h-80 md:h-auto'>
                 <Image
-                    src="/images/fullfill.webp"
+                    src="/images/fullfill-life.jpg"
                     alt="Fulfilling life"
                     fill
-                    className='object-cover object-center md:object-[center_20%] lg:object-[center_30%]'
+                    className='object-cover object-center lg:object-bottom'
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    priority
+                    loading='lazy'
                 />
             </motion.div>
         </section>

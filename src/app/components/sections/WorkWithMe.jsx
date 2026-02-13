@@ -43,7 +43,16 @@ const WorkWithMe = () => {
                         className='font-semibold text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight' >
                         You don't have to do this all alone.
                     </motion.h2>
-                    <div className='text-base sm:text-lg md:text-base lg:text-xl xl:text-2xl leading-relaxed'>
+
+                    <motion.div
+                        initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.5,
+                            ease: [0.1, 0.2, 0.4, 1],
+                        }}
+                        className='text-base sm:text-lg md:text-base lg:text-xl xl:text-2xl leading-relaxed'>
                         If you are facing any of these, there's hope:
                         <br />
                         <br />
@@ -67,14 +76,14 @@ const WorkWithMe = () => {
                         <br />
                         With empathy and guidance, we'll work together to navigate the challenges life throws your way.
 
-                    </div>
+                    </motion.div>
                 </article>
                 <MotionLink
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
-                        duration: 0.4,
+                        duration: 0.5,
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     href="/#contact"

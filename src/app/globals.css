@@ -2,15 +2,13 @@
 
 :root {
   /* Base */
-  --white-hsl: hsl(30 55.56% 96.47%);
-  --black-hsl: hsl(95.29 45.95% 14.51%);
+  --white-hsl: hsl(40 40% 96%);
+  --black-hsl: hsl(100 35% 18%);
 
   /* Accent system */
-  --safeLightAccent-hsl: hsl(255 10.34% 77.25%);
-  --safeInverseAccent-hsl: hsl(0 0% 0%);
-  --accent-hsl: hsl(255 10.34% 77.25%);
-  --lightAccent-hsl: hsl(32.73, 17.46%, 87.65%);
-  --darkAccent-hsl: hsl(56.79, 28.57%, 38.43%);
+  --accent-hsl: hsl(95 25% 65%);
+  --lightAccent-hsl: hsl(40 30% 88%);
+  --darkAccent-hsl: hsl(95 30% 38%);
 
   /* Fonts */
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -27,7 +25,7 @@
   --color-dark-accent: var(--darkAccent-hsl);
 
   /* Fonts */
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-mont-serret);
   --font-mono: var(--font-mono);
 }
 

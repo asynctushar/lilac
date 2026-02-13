@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import {  motion, } from 'motion/react';
+import { motion, } from 'motion/react';
 
 
 const Header = () => {
@@ -87,9 +87,9 @@ const Header = () => {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="font-semibold text-lg md:text-3xl lg:text-4xl"
+                        className="font-semibold text-lg md:text-2xl lg:text-3xl"
                     >
-                        Lilic Template
+                        Dr. Maya Reynolds
                     </Link>
 
                     {/* Desktop nav */}
