@@ -35,7 +35,7 @@ const Hero = () => {
                         duration: 0.5,
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
-                    className='font-semibold text-4xl md:text-5xl xl:text-7xl leading-tight text-primary'>Feel steady again<br />inside yourself</motion.h1>
+                    className='font-semibold text-4xl md:text-5xl xl:text-7xl leading-tight text-primary text-center'>Feel steady again<br />inside yourself</motion.h1>
                 <motion.h5
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ opacity: 1, y: 0 }}

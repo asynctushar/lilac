@@ -36,7 +36,7 @@ const Professional = () => {
                     duration: 0.5,
                     ease: [0.1, 0.2, 0.4, 1],
                 }}
-                className='text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center'>
+                className='text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center text-primary'>
                 My Professional Background
             </motion.h2>
             <motion.div

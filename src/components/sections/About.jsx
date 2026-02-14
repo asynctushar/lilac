@@ -18,7 +18,7 @@ const About = () => {
                     ease: [0.1, 0.2, 0.4, 1],
                 }}
                 className='w-full md:w-1/2 flex flex-col items-start justify-center gap-8 md:gap-6 lg:gap-8 xl:gap-12 lg:px-12 xl:px-32'>
-                <h2 className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight'>
+                <h2 className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-primary leading-tight'>
                     Hi, I'm Dr. Maya Reynolds.</h2>
                 <p className='text-base sm:text-lg xl:text-xl leading-relaxed'>
                     I work with adults navigating anxiety, trauma, and burnout. My approach is warm, collaborative, and grounded in helping you feel safer and more steady in your daily life.

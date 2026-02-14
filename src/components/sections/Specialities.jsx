@@ -7,20 +7,20 @@ import { motion, } from 'motion/react';
 const specialities = [
     {
         id: 1,
-        title: "Anxiety & Panic",
-        description: "Constant worry, racing thoughts, or feeling on edge can take a toll. Therapy helps you calm your nervous system and regain control.",
+        title: "Anxiety & Stress",
+        description: "Support for chronic worry, overthinking, panic, and emotional overwhelm using evidence-based techniques.",
         picture: "/images/anxiety.jpg"
     },
     {
         id: 2,
-        title: "Trauma & Past Experiences",
-        description: "Earlier life experiences can quietly shape your relationships, confidence, and sense of safety. We’ll gently explore and process them.",
+        title: "Trauma & PTSD",
+        description: "Gentle, trauma-informed therapy including EMDR and somatic approaches for deep emotional healing.",
         picture: "/images/trauma.jpg"
     },
     {
         id: 3,
-        title: "Burnout & High-Functioning Stress",
-        description: "You may appear capable on the outside while feeling exhausted inside. Therapy helps you slow down and respond with more clarity.",
+        title: "Burnout & Life Transitions",
+        description: "Helping professionals and individuals navigate burnout, career stress, and major life changes.",
         picture: "/images/burnout.jpg"
     }
 ];
@@ -40,11 +40,11 @@ const Specialities = () => {
                 className='font-semibold text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight pb-8 sm:pb-10 md:pb-12 lg:pb-16'>
                 Areas of Focus
             </motion.div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
                 {specialities.map((item) => (
                     <div
                         key={item.id}
-                        className='bg-secondary/90 rounded-sm border-secondary backdrop-blur p-6 sm:p-7 md:p-6 lg:p-8 flex flex-col gap-6 sm:gap-8 md:gap-6 lg:gap-8 xl:gap-10'
+                        className='bg-secondary/90 rounded-sm border-secondary backdrop-blur p-6 sm:p-7 md:p-6 lg:p-8 flex flex-col gap-6 sm:gap-8 md:gap-6 lg:gap-8 xl:gap-10 shadow'
                     >
                         <motion.h4
                             initial={{ y: 5, opacity: 0 }}
@@ -54,7 +54,7 @@ const Specialities = () => {
                                 duration: 0.5,
                                 ease: [0.1, 0.2, 0.4, 1],
                             }}
-                            className='font-medium text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl'>
+                            className='font-medium text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-3xl text-primary'>
                             {item.title}
                         </motion.h4>
 

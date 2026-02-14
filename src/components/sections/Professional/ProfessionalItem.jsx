@@ -8,7 +8,7 @@ const ProfessionalItem = ({ profession, isOpen, onToggle }) => {
                 onClick={onToggle}
                 aria-expanded={isOpen}
             >
-                <p className={`text-xl md:text-2xl font-medium leading-tight flex-1 pr-2 text-primary`}>
+                <p className={`text-xl md:text-2xl font-medium leading-tight flex-1 pr-2 text-foreground/90`}>
                     {profession.title}
                 </p>
 

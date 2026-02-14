@@ -87,7 +87,7 @@ const Header = () => {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="font-semibold text-lg md:text-2xl lg:text-3xl"
+                        className="font-semibold text-lg md:text-2xl lg:text-3xl text-primary"
                     >
                         Dr. Maya Reynolds
                     </Link>

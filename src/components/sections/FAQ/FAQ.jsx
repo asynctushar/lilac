@@ -8,18 +8,18 @@ import FaqAccordion from './FaqAccordion';
 const faqs = [
     {
         id: 1,
-        question: "Do you take insurance?",
-        answer: "I am an out-of-network provider. I can provide a superbill for possible reimbursement through your insurance plan."
+        question: "How are sessions structured?",
+        answer: "Sessions are collaborative, grounded, and paced to support both emotional and physiological regulation."
     },
     {
         id: 2,
-        question: "What are your rates?",
-        answer: "My standard fee is $175 per 50-minute session. We can discuss payment options during your consultation."
+        question: "Where are sessions held?",
+        answer: "In-person at Dr. Maya's Santa Monica office or via secure telehealth for clients across California."
     },
     {
         id: 3,
-        question: "Do you have any openings?",
-        answer: "Availability changes throughout the year. Please reach out to inquire about current openings and scheduling."
+        question: "What therapy approaches are used?",
+        answer: "Cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques."
     },
 ];
 

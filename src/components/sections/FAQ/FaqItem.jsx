@@ -19,7 +19,7 @@ const FaqItem = ({ faq, isOpen, onToggle }) => {
                     />
                 </div>
 
-                <p className={`text-xl md:text-2xl font-semibold leading-tight flex-1 pr-2 text-primary`}>
+                <p className={`text-xl md:text-2xl font-semibold leading-tight flex-1 pr-2 text-foreground/90`}>
                     {faq.question}
                 </p>
             </button>
