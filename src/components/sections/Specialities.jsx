@@ -44,7 +44,7 @@ const Specialities = () => {
                 {specialities.map((item) => (
                     <div
                         key={item.id}
-                        className='border border-foreground bg-secondary p-6 sm:p-7 md:p-6 lg:p-8 flex flex-col gap-6 sm:gap-8 md:gap-6 lg:gap-8 xl:gap-10'
+                        className='bg-secondary/90 rounded-sm border-secondary backdrop-blur p-6 sm:p-7 md:p-6 lg:p-8 flex flex-col gap-6 sm:gap-8 md:gap-6 lg:gap-8 xl:gap-10'
                     >
                         <motion.h4
                             initial={{ y: 5, opacity: 0 }}
