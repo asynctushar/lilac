@@ -28,7 +28,7 @@ const specialities = [
 
 const Specialities = () => {
     return (
-        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24'>
+        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 py-12 sm:py-14 md:py-16 lg:py-20 xl:py-24 bg-background'>
             <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const Specialities = () => {
                 {specialities.map((item) => (
                     <div
                         key={item.id}
-                        className='border border-foreground bg-primary p-6 sm:p-7 md:p-6 lg:p-8 flex flex-col gap-6 sm:gap-8 md:gap-6 lg:gap-8 xl:gap-10'
+                        className='border border-foreground bg-secondary p-6 sm:p-7 md:p-6 lg:p-8 flex flex-col gap-6 sm:gap-8 md:gap-6 lg:gap-8 xl:gap-10'
                     >
                         <motion.h4
                             initial={{ y: 5, opacity: 0 }}

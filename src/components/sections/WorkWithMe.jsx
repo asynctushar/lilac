@@ -9,7 +9,7 @@ const MotionLink = motion(Link);
 
 const WorkWithMe = () => {
     return (
-        <section className='lg:min-h-[80vh] md:min-h-[40vh] flex flex-col md:flex-row overflow-hidden bg-accent'>
+        <section className='lg:min-h-[80vh] md:min-h-[40vh] flex flex-col md:flex-row overflow-hidden bg-secondary'>
 
             <motion.div
                 initial={{ y: 100, opacity: 0 }}
@@ -40,7 +40,7 @@ const WorkWithMe = () => {
                             duration: 0.5,
                             ease: [0.1, 0.2, 0.4, 1],
                         }}
-                        className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight' >
+                        className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-primary' >
                         You are not alone
                     </motion.h2>
 
@@ -87,7 +87,7 @@ const WorkWithMe = () => {
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     href="/#contact"
-                    className='uppercase border-t border-foreground px-6 py-4 md:py-3 lg:py-8 font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:bg-foreground hover:text-background duration-700 transition-colors'
+                    className='uppercase border-t border-primary px-6 py-4 md:py-3 lg:py-8 font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:bg-primary hover:text-background duration-700 transition-colors'
                 >
                     Schedule a Consultation
                     <span className='-translate-y-0.5'>&#8594;</span>

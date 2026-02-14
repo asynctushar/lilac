@@ -26,7 +26,7 @@ const professions = [
 
 const Professional = () => {
     return (
-        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-8 sm:gap-12 py-12 sm:py-16 md:py-20 lg:py-24 items-center bg-primary'>
+        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-8 sm:gap-12 py-12 sm:py-16 md:py-20 lg:py-24 items-center bg-secondary'>
 
             <motion.h2
                 initial={{ y: 30, opacity: 0 }}

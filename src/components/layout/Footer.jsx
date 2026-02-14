@@ -6,7 +6,7 @@ import { motion, } from 'motion/react';
 
 const Footer = () => {
     return (
-        <footer className='bg-primary text-center py-8 px-4'>
+        <footer className='bg-secondary text-center py-8 px-4'>
             <motion.div
                 initial={{ y: 10, opacity: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -27,6 +27,7 @@ const Footer = () => {
                 </p>
             </motion.div>
             <motion.p
+                className='text-primary'
                 initial={{ y: 10, opacity: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

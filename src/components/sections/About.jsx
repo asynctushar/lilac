@@ -7,7 +7,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className='px-8 sm:px-12 md:px-8 lg:px-24 xl:px-20 lg:h-screen h-auto flex flex-col-reverse md:flex-row gap-16 sm:gap-16 py-24 items-center bg-primary'>
+        <section className='px-8 sm:px-12 md:px-8 lg:px-24 xl:px-20 lg:h-screen h-auto flex flex-col-reverse md:flex-row gap-16 sm:gap-16 py-24 items-center bg-secondary'>
 
             <motion.div
                 initial={{ y: 20, opacity: 0 }}
@@ -23,7 +23,7 @@ const About = () => {
                 <p className='text-base sm:text-lg xl:text-xl leading-relaxed'>
                     I work with adults navigating anxiety, trauma, and burnout. My approach is warm, collaborative, and grounded in helping you feel safer and more steady in your daily life.
                 </p>
-                <Link href="/#contact" className='uppercase border border-foreground px-6 py-2 font-semibold flex items-center justify-center gap-2 hover:bg-foreground hover:text-background duration-700 self-center mt-4 md:mt-12'>Let's Talk <span className='-translate-y-0.5'>&#8594;</span></Link>
+                <Link href="/#contact" className='uppercase border border-primary px-6 py-2 font-semibold flex items-center justify-center gap-2 hover:bg-primary hover:text-background duration-700 self-center mt-4 md:mt-12'>Let's Talk <span className='-translate-y-0.5'>&#8594;</span></Link>
             </motion.div>
 
             <div className='w-full md:w-1/2 relative'>

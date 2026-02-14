@@ -26,7 +26,7 @@ const faqs = [
 
 const FAQ = () => {
     return (
-        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 lg:min-h-screen min-h-auto flex flex-col md:flex-row gap-12 sm:gap-16 py-12 sm:py-16 md:py-20 lg:py-24 items-center md:items-start'>
+        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 lg:min-h-screen min-h-auto flex flex-col md:flex-row gap-12 sm:gap-16 py-12 sm:py-16 md:py-20 lg:py-24 items-center md:items-start bg-background'>
             <div className='w-full md:w-1/2'>
 
                 <motion.div

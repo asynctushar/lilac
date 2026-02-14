@@ -9,7 +9,7 @@ const MotionLink = motion.create(Link);
 
 const FullfillLIfe = () => {
     return (
-        <section className='lg:min-h-[80vh] md:min-h-[40vh]  flex flex-col-reverse md:flex-row overflow-hidden bg-primary'>
+        <section className='lg:min-h-[80vh] md:min-h-[40vh]  flex flex-col-reverse md:flex-row overflow-hidden bg-secondary'>
             {/* Content Section */}
             <div className='flex flex-col w-full md:w-1/2'>
                 <motion.article
@@ -21,7 +21,7 @@ const FullfillLIfe = () => {
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 py-8 sm:py-10 md:py-12 lg:py-16 flex flex-col justify-center gap-4 sm:gap-6 md:gap-6 lg:gap-8 flex-1'>
-                    <h2 className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight'>
+                    <h2 className='font-semibold text-3xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight text-primary'>
                         Live with
                         more ease
                     </h2>
@@ -41,7 +41,7 @@ const FullfillLIfe = () => {
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     href="/#cta"
-                    className='uppercase border-t border-foreground px-6 py-4 md:py-3 lg:py-8 font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:bg-foreground hover:text-background duration-700 transition-colors'
+                    className='uppercase border-t border-primary px-6 py-4 md:py-3 lg:py-8 font-semibold text-sm sm:text-base flex items-center justify-center gap-2 hover:bg-primary hover:text-background duration-700 transition-colors'
                 >
                     Get In Touch <span className='-translate-y-0.5'>&#8594;</span>
                 </MotionLink>

@@ -7,7 +7,7 @@ import { motion, } from 'motion/react';
 
 const Address = () => {
     return (
-        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-12 sm:gap-24 py-16 sm:py-16 md:py-20 lg:py-24 items-center md:flex-row md:items-start font-medium text-base sm:text-lg xl:text-xl leading-relaxed'>
+        <section className='px-6 sm:px-8 md:px-10 lg:px-16 xl:px-24 2xl:px-32 flex flex-col gap-12 sm:gap-24 py-16 sm:py-16 md:py-20 lg:py-24 items-center md:flex-row md:items-start font-medium text-base sm:text-lg xl:text-xl leading-relaxed bg-background'>
             {/* Contact Information */}
             <motion.div
                 initial={{ y: 30, opacity: 0 }}
@@ -57,7 +57,7 @@ const Address = () => {
                         duration: 0.5,
                         ease: [0.1, 0.2, 0.4, 1],
                     }} className='flex flex-col gap-8 text-center md:text-left'>
-                    <h2 className='text-2xl md:text-3xl font-medium'>
+                    <h2 className='text-2xl md:text-3xl font-medium text-primary'>
                         Hours
                     </h2>
                     <div className='flex flex-col gap-1'>
@@ -76,7 +76,7 @@ const Address = () => {
                         ease: [0.1, 0.2, 0.4, 1],
                     }}
                     className='flex flex-col gap-8 text-center md:text-right' aria-label="Footer navigation">
-                    <h2 className='text-2xl md:text-3xl font-medium'>
+                    <h2 className='text-2xl md:text-3xl font-medium text-primary'>
                         Find
                     </h2>
                     <ul className='flex flex-col gap-2 list-none'>

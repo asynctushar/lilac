@@ -56,7 +56,7 @@ const OurOffice = () => {
     };
 
     return (
-        <section className="min-h-screen flex items-center px-6 py-16 bg-linear-to-br from-primary/30 via-background to-primary/20">
+        <section className="min-h-screen flex items-center px-6 py-16 bg-background">
             <div className="px-8 sm:px-12 md:px-8 lg:px-24 xl:px-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
 
@@ -69,7 +69,7 @@ const OurOffice = () => {
                         viewport={{ once: true, margin: "-100px" }}
                     >
                         <motion.h2
-                            className="text-4xl lg:text-5xl font-semibold  text-foreground"
+                            className="text-4xl lg:text-5xl font-semibold"
                             variants={itemVariants}
                         >
                             A Calm Space for Healing
@@ -88,7 +88,7 @@ const OurOffice = () => {
                             className="flex items-start gap-4 pt-4"
                             variants={itemVariants}
                         >
-                            <div className="w-12 h-12 rounded-full bg-linear-to-br from-accent to-dark-accent flex items-center justify-center shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center shrink-0">
                                 <MapPin className="w-6 h-6 text-background" />
                             </div>
                             <div>
@@ -104,11 +104,11 @@ const OurOffice = () => {
                             className="border-l-4 border-accent bg-background/80 backdrop-blur rounded-r-xl p-6 mt-8 shadow-sm"
                             variants={itemVariants}
                         >
-                            <p className="text-foreground/90 text-base md:text-lg leading-relaxed italic">
+                            <p className="text-foreground text-base md:text-lg leading-relaxed italic">
                                 "Clients often share that the space itself helps them feel more at ease.
                                 It's designed to be a place where you can slow down and feel truly present."
                             </p>
-                            <p className="text-sm text-foreground/80 mt-3">— Dr. Maya Reynolds</p>
+                            <p className="text-sm text-foreground/90 mt-3">— Dr. Maya Reynolds</p>
                         </motion.div>
                     </motion.div>
 

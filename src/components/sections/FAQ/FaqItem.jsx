@@ -1,19 +1,15 @@
 import React from 'react';
 
-const ProfessionalItem = ({ profession, isOpen, onToggle }) => {
+const FaqItem = ({ faq, isOpen, onToggle }) => {
     return (
         <div className='border-t border-foreground last:border-b'>
             <button
-                className={`w-full flex items-center justify-between gap-4 py-3 md:py-4 text-left group transition-opacity duration-200 cursor-pointer`}
+                className={`w-full flex items-center justify-between gap-4 sm:gap-6 md:gap-8 py-3 md:py-4 text-left group transition-opacity duration-200 cursor-pointer`}
                 onClick={onToggle}
                 aria-expanded={isOpen}
             >
-                <p className={`text-xl md:text-2xl font-medium leading-tight flex-1 pr-2`}>
-                    {profession.title}
-                </p>
-
                 {/* Plus/Minus Icon */}
-                <div className={`relative shrink-0 w-4 h-4 mt-1`}>
+                <div className={`relative shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mt-1`}>
                     <span
                         className={`absolute left-0 top-1/2 -translate-y-1/2 h-0.5 w-full bg-foreground/60 transition-all duration-200 ease-in-out`}
                     />
@@ -22,16 +18,20 @@ const ProfessionalItem = ({ profession, isOpen, onToggle }) => {
                             ${isOpen ? "rotate-90" : "rotate-180"}`}
                     />
                 </div>
+
+                <p className={`text-xl md:text-2xl font-semibold leading-tight flex-1 pr-2 text-primary`}>
+                    {faq.question}
+                </p>
             </button>
 
             <div
                 className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                     }`}
             >
-                <div className="overflow-hidden w-full">
+                <div className="overflow-hidden">
                     <div className={`pt-2 pb-4 sm:pb-5 md:pb-6 pl-0 gap-4 sm:gap-6 md:gap-8`}>
-                        <p className={`text-sm sm:text-base xl:text-xl leading-relaxed pr-2`}>
-                            {profession.description}
+                        <p className={`text-base sm:text-lg xl:text-xl leading-relaxed pr-2`}>
+                            {faq.answer}
                         </p>
                     </div>
                 </div>
@@ -40,4 +40,4 @@ const ProfessionalItem = ({ profession, isOpen, onToggle }) => {
     );
 };
 
-export default ProfessionalItem;
+export default FaqItem;

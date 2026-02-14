@@ -2,13 +2,14 @@
 
 :root {
   /* Base */
-  --white-hsl: hsl(40 40% 96%);
-  --black-hsl: hsl(100 35% 18%);
+  --background: hsl(35, 30%, 97%);  
+  --foreground: hsl(20, 15%, 18%);     
+  --secondary: hsl(32, 25%, 90%);  
+  --secondary: hsl(32, 25%, 90%);  
 
-  /* Accent system */
-  --accent-hsl: hsl(95 25% 65%);
-  --lightAccent-hsl: hsl(40 30% 88%);
-  --darkAccent-hsl: hsl(95, 30%, 38%);
+  /* Brand */
+  --primary: hsl(20, 15%, 24%);
+  --accent: hsl(30, 20%, 50%);      
 
   /* Fonts */
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -16,13 +17,14 @@
 
 
 
+
 @theme inline {
   /* Colors */
-  --color-background: var(--white-hsl);
-  --color-foreground: var(--black-hsl);
-  --color-primary: var(--lightAccent-hsl);
-  --color-accent: var(--accent-hsl);
-  --color-dark-accent: var(--darkAccent-hsl);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
 
   /* Fonts */
   --font-sans: var(--font-mont-serret);
@@ -32,10 +34,10 @@
 
 @layer base {
   body {
-    background-color: var(--white-hsl);
-    color: var(--black-hsl);
+    background-color: var(--background);
+    color: var(--black);
     font-family: var(--font-mont-serret);
-    font-weight: var(--fw-regular);
+    font-weight: 400;
     line-height: 1.6;
   }
 }
